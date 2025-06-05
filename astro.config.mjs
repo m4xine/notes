@@ -6,21 +6,50 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'My Docs',
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
-			sidebar: [
+			title: 'Notes',
+			logo: {
+				src: './src/assets/seal.png'
+			},
+			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/m4xine/notes' }],
+			sidebar:[ 
 				{
-					label: 'Guides',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
-					],
+					label: 'Web Vulnerabilities',
+					autogenerate: { directory: 'web_vulnerabilities' },
 				},
 				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
+					label: 'API Vulnerabilities',
+					autogenerate: { directory: 'api_vulnerabilities' },
+				},
+				{
+					label: 'Hacking Tools',
+					autogenerate: { directory: 'hacking_tools' },
+				},	
+				{
+					label: 'PortSwigger',
+					autogenerate: { directory: 'portswigger' },
+				},
+				{
+					label: 'Pentest',
+					autogenerate: { directory: 'pentest' },
+				},
+				{
+					label: 'AWS',
+					autogenerate: { directory: 'aws' },
+				},
+				{
+					label: 'Programming',
+					autogenerate: { directory: 'programming' },
+				},
+				{
+					label: 'OSWE Prep',
+					autogenerate: { directory: 'oswe_prep' },
 				},
 			],
+			pagination: false,
+			customCss:['/src/styles/custom.css'],
 		}),
 	],
+	redirects:{
+		'/': 'web_vulnerabilities/xss',
+	},
 });

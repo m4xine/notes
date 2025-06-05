@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap');
+
+/* Override Starlight font variables */
+:root {
+  --sl-font-body: 'Inter', sans-serif;
+  --sl-font-heading: 'Inter', sans-serif;
+  --sl-font-mono: 'Fira Code', monospace; /* Optional */
+}
+
+h1{
+    font-size: 32px;
+}
+
+h2{
+    font-size: 24px;
+}
+
+h3{
+    font-size: 20px;
+}
+
+h4{
+    font-size: 16px;
+}
+
+#starlight__on-this-page{
+  display: none;
+}
+
+.header{
+    padding: 16px 12px;
+}
+
+.header .title-wrapper{
+    padding: 0;
+}
+
+.header .title-wrapper .site-title{
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    gap: 0.6rem;
+    font-size: 22px;
+}
+
+/* Sidebar */
+.sidebar-content{
+    padding: 0;
+}
+
+.sidebar-content ul{
+    margin: 8px 0;
+}
+
+.sidebar-content .top-level{
+    margin: 0;
+}
+
+.sidebar-content li{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar-content li span{
+    font-size: 12.8px;
+}
+
+.sidebar-content li a{
+    padding: 4px 12px;
+    margin: 0 8px;
+}
+
+.sidebar-content .group-label .large {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+
+.sidebar-content summary {
+  padding: 0.5rem 0;
+  cursor: pointer;
+  border-bottom: solid 1px;
+  padding: 8px 12px;
+}
+
+:where(nav a, .sidebar-content a) {
+    display: block;
+    padding: 0.5rem;
+}
+
+/* Main panel */
+.content-panel{
+    padding-top: 0;
+    border: 0;
+}
+
+.content-panel h1{
+    padding-bottom: 9px;
+    border-bottom: 1px solid;
+}
+
+.content-panel .level-h2{
+    display: block;
+    padding-bottom: 9px;
+    border-bottom: 1px solid;
+}
+
+.content-panel .expressive-code pre{
+    border: 1px solid #eee;
+    border-radius: 6px;
+}
+
+.content-panel .sl-anchor-link{
+    display: none;
+}
+
+.content-panel figcaption{
+    display: none;
+}
+
+.content-panel code{
+    border-radius: 6px;
+}
+
+.content-panel .copy button::before{
+    border: none;
+}
+
+.caret{
+    display: none;
+}
+
+html[data-theme='light'] {
+  color: #404040;
+}
+
+html[data-theme='light'] .header .title-wrapper .site-title{
+    color: #1F2328;
+}
+
+html[data-theme='light'] h1,
+html[data-theme='light'] h2,
+html[data-theme='light'] h3,
+html[data-theme='light'] h4,
+html[data-theme='light'] h5,
+html[data-theme='light'] h6 {
+  color: #1F2328;
+}
+
+html[data-theme='light'] .header {
+  background-color: #FFFFFF;
+}
+
+html[data-theme='light'] .group-label .large {
+  color: #6B6B6B;
+}
+
+html[data-theme='light'] details[open] summary .caret {
+  transform: rotate(90deg); /* optional: to indicate expanded state */
+}
+
+html[data-theme='light'] .sidebar-content a[aria-current="page"] {
+  color: #404040;
+  background-color: #E6F1FF;
+}
+
+html[data-theme='light'] .content-panel h1,
+html[data-theme='light'] .content-panel .level-h2,
+html[data-theme='light'] summary {
+    border-color: #eee;
+}
+
+html[data-theme='light'] .content-panel .expressive-code pre{
+    background-color: #F6F8FA;
+}
+
+/*** DARK MODE ***/
+html[data-theme='dark'] summary {
+  border-bottom: 1px solid #161D27;
+}
