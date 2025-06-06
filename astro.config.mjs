@@ -48,6 +48,9 @@ export default defineConfig({
 			],
 			pagination: false,
 			customCss:['/src/styles/custom.css'],
+			components:{
+				SkipLink: './src/components/EmptyComponent.astro',
+			},
 		}),
 	],
 	redirects:{
