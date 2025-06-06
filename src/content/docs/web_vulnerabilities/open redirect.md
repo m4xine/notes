@@ -81,8 +81,8 @@ ReturnUrl
 ### Bypass blacklist
 `http` blacklist bypass:
 
-```
-// evil.com
+```html
+//evil.com
 ```
 
 `//` blacklist bypass:
@@ -105,7 +105,7 @@ URL encode Unicode full stop 。
 ```
 
 Null byte
-```url
+```html
 //evil%00.com
 ```
 Parameter pollution

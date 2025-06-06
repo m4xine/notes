@@ -6,6 +6,7 @@ description: Poor implementation of JWT can be used to bypass authentication and
 - **header**: metadata about the token
 - **payload**: claim about the data or user
 - **signature**:  header and payload are encoded, then signed with a secret key to prevent tampering.
+![JWT Format](/images/JWT_20250518%20_162911.png)
 ## Exploit
 ### Signature not verified
 Make changes to the payload, like changing to a different user. 
@@ -28,6 +29,8 @@ Change user:
 Server can be setup incorrectly and it can accepts unsigned JWTs.
 Use burpsuite **JSON Web Token** extensions to remove the signature. 
 
+![JSON Web Token](/images/JWT_20250518%20_164907.png)
+
 It removes the signature. The header now looks like this:
 ```http
 {  
@@ -49,4 +52,4 @@ hashcat -a 0 -m 16500 eyJraWQiOiI0ODY2MTZhOC1lM2I0LTQzZWItODQ3Mi04NTc1OTgzNWJhNT
 Create a new signing key with the cracked secret key.
 1. Burp Suite > JWT Editor > New Symmetric Key
 2. Specify secret > Generate
-3. Go to JSON Web token, change the payload and sign with new key.
+3. Go to JSON Web token, change the payload and sign with new key.![JWT Signing Key](/images/JWT_20250518%20_170826.png)
