@@ -105,6 +105,11 @@ h4{
     display: block;
     padding-bottom: 9px;
     border-bottom: 1px solid;
+    margin-top: 20px;
+}
+
+.content-panel .level-h3{
+    margin-top: 20px;
 }
 
 .content-panel .expressive-code pre{

