@@ -30,6 +30,10 @@ export default defineConfig({
 					autogenerate: { directory: 'portswigger' },
 				},
 				{
+					label: 'TryHackMe',
+					autogenerate: { directory: 'tryhackme' },
+				},
+				{
 					label: 'Pentest',
 					autogenerate: { directory: 'pentest' },
 				},

