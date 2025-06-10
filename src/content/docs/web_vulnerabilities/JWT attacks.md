@@ -131,7 +131,7 @@ TODO
 TODO
 ###  CVE-2022-21449 (Psychic Signature)
 TODO
-## Links
+## Resources
 - [The Ultimate Guide to JWT Vulnerabilities and Attacks](https://pentesterlab.com/blog/jwt-vulnerabilities-attacks-guide)
 - [JWT Specification](https://datatracker.ietf.org/doc/html/rfc7519)
 - [JSON Web algorithms](https://datatracker.ietf.org/doc/html/rfc7518)

@@ -197,5 +197,7 @@ Finding the value
 ```
 
 
-## Link
+## Resources
 - [MongoDB Operator Reference](https://www.mongodb.com/docs/manual/reference/operator/query/)
+- [HackTricks NoSQL](https://book.hacktricks.wiki/en/pentesting-web/nosql-injection.html)
+- [Exploit Notes NoSQL](https://exploit-notes.hdks.org/exploit/web/security-risk/nosql-injection/)

@@ -278,6 +278,6 @@ Testing for Blind XXE
 <laugh>&LOL3;</laugh>
 ```
 
-## Links
+## Resources
 - [XXE Complete Guide: Impact, Examples, and Prevention](https://www.hackerone.com/knowledge-center/xxe-complete-guide-impact-examples-and-prevention)
 - [XML External Entity Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/XML_External_Entity_Prevention_Cheat_Sheet.html)

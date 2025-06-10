@@ -31,5 +31,5 @@ Append `%00`,  character following null byte will be ignored
 ### Fuzzing
 Fuzz using `LFI-Jhaddix.txt` wordlist
 
-## Links
+## Resources
 -  [LFI/RFI payloads ](https://exploit-notes.hdks.org/exploit/web/security-risk/file-inclusion/)
