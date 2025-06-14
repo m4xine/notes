@@ -34,6 +34,10 @@ export default defineConfig({
 					autogenerate: { directory: 'tryhackme' },
 				},
 				{
+					label: 'HackTheBox',
+					autogenerate: { directory: 'hackthebox' },
+				},
+				{
 					label: 'Pentest',
 					autogenerate: { directory: 'pentest' },
 				},

